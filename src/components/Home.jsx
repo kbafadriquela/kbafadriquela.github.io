@@ -32,10 +32,9 @@ function Hero () {
         I'm a freelance Wordpress and Web developer. My passion is about
         creating simple and functional websites.
         <br />
-        Check out my{' '}
-        <Link to='work' spy={true} smooth={true} duration={500} class='custom-lnk font-bold'>
+        Check out my <Link to='work' spy={true} smooth={true} duration={500} class='custom-lnk font-bold'>
           works
-        </Link>{' '}
+        </Link>
         below.
       </div>
     </div>
