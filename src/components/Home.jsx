@@ -190,7 +190,7 @@ function Contact() {
 function Footer() {
   return (
     <div class="footer mx-auto text-sm font-camphor text-center pb-12 text-blue-title">
-      <span>Made by Krizia Bianca &copy; {new Date().getFullYear()}</span>
+      <span>Developed by Krizia Bianca &copy; {new Date().getFullYear()}</span>
     </div>
   )
 }
