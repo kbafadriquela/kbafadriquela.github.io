@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Camphor';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(./assets/fonts/camphor-400.woff) format('woff');
+}
+@font-face {
+  font-family: 'Camphor';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/camphor-300.woff) format('woff');
+}
+@font-face {
+  font-family: 'Camphor';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/camphor-500.woff) format('woff');
+}
+@font-face {
+  font-family: 'Camphor';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(./assets/fonts/camphor-600.woff) format('woff');
+}
+
+
+:root {
+  font-family: 'Camphor', sans-serif;
+  line-height: 1.5;
+  color: #525f7f;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --purple: #747fe0;
+  --grey: #525f7f;
+  --light-grey: #f0f0f0;
+  --faded-purple: #5a5d7a;
+  --faded-blue: #7795f8;
+  --faded-yellow: #e7d184;
+  --yellow: #fdbc3d;
+  --highlighter-green: #92eac0;
+  --teal: #35feff;
+  --border-width: 1px;
+  --background-color: var(--light-grey);
+}
+
+a {
+  font-weight: 400;
+  text-decoration: inherit;
+}
+a:hover {
+  opacity: .8;
+}
+a:active {
+  color: var(--purple);
+}
+body {
+  margin: 0 auto;
+  color: var(--grey);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
