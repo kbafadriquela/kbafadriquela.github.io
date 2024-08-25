@@ -1,5 +1,18 @@
 [
     {
+        "title": "Portfolio UI",
+        "description": "Portfolio UI is a responsive WordPress theme derived from a Figma design, built on the Underscore framework for easy customization. It offers a sleek, minimalist look, perfect for showcasing work and projects across all devices.",
+        "skills": [
+            "PHP",
+            "Javascript",
+            "HTML5",
+            "Wordpress"
+        ],
+        "image": "../assets/projects/portfolio-ui.png",
+        "url": "http://portfolioui.000.pe/",
+        "link": "portfolioui.000.pe"
+    },
+    {
         "title": "Airport Codes PH",
         "description": "Airport Codes PH is a website about Philippine Airports, its corresponding airport codes and the explanation behind each code.",
         "skills": [
