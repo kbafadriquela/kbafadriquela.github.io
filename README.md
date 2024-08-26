@@ -1,3 +1,3 @@
 # Work | Krizia Bianca Fadriquela
 
-This simple website portfolio is built for Krizia Bianca using Vite + React and TailwindCSS.
+Professional portfolio of Krizia Bianca built using Vite + React and TailwindCSS.

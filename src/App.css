@@ -14,7 +14,7 @@ body {
 .navbar.container .navbar {
   width: 286px;
 }
-.navbar a, .custom-lnk {
+.navbar a, .custom-lnk a {
   cursor: pointer;
 }
 .nav-link,
