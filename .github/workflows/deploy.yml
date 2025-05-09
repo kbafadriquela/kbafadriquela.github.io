@@ -1,0 +1,27 @@
+name: Deploy Vite App
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.DROPLET_SSH_KEY }}
+
+      - name: Deploy to Droplet
+        run: |
+          ssh -o StrictHostKeyChecking=no root@188.166.218.25 << 'EOF'
+            cd /home/meowpress.dev/public_html
+            git pull origin main
+            npm install
+            npm run build
+          EOF
