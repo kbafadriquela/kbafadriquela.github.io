@@ -35,6 +35,3 @@ newwp/
 node_modules/
 dist/
 .env
-
-# macOS system files
-.DS_Store
