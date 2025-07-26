@@ -1,5 +1,17 @@
 [
     {
+        "title": "Next Level",
+        "description": "Next Level is a responsive landing page derived from a Figma design, built with HTML5 and TailwindCSS for easy customization.",
+        "skills": [
+            "HTML5",
+            "Javascript",
+            "TailwindCSS"
+        ],
+        "image": "../assets/projects/nextlevel.png",
+        "url": "https://projects.meowpress.dev/nextlevel",
+        "link": "projects.nextlevel"
+    },
+    {
         "title": "Portfolio UI",
         "description": "Portfolio UI is a responsive WordPress theme derived from a Figma design, built on the Underscores based theme for easy customization. It offers a sleek, minimalist look, perfect for showcasing work and projects across all devices.",
         "skills": [
