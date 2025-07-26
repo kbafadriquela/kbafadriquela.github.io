@@ -7,6 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+#Build output
 node_modules
 dist
 dist-ssr
@@ -23,15 +24,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore server-only files
-.htaccess
+# Server only
+deploy.log
 github-webhook.php
 favicon.svg
-
-# Ignore WordPress installation in subfolder
-newwp/
-
-# Node/Vite-related
-node_modules/
-dist/
-.env
