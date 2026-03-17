@@ -12,6 +12,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.7.0
         with:
@@ -19,9 +25,4 @@ jobs:
 
       - name: Deploy to Droplet
         run: |
-          ssh -o StrictHostKeyChecking=no root@188.166.218.25 << 'EOF'
-            cd /home/meowpress.dev/public_html
-            git pull origin main
-            npm install
-            npm run build
-          EOF
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" dist/ root@188.166.218.25:/home/meowpress.dev/public_html/
